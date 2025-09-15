@@ -1,0 +1,6 @@
+Instruções
+Dado um arquivo .csv com alguns nomes em letras maiúsculas, converter cada nome para letras minúsculas, mantendo a primeira letra em maiúscula (capitalização).
+As preposições de, da, das, do, dos, e e, deverão ser mantidas em minúsculas.
+Os nomes convertidos deverão ser gravados em outro arquivo .csv.
+Utilize Javascript ou TypeScript para resolver o problema.
+Solução no GitHub: hdblouro/TPI-Dados01

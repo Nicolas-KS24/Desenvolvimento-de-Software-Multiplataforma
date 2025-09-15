@@ -1,0 +1,8 @@
+Instruções
+Dada uma lista emails.csv de aniversariantes e seus e-mails, enviar e-mail padronizado com a mensagem do arquivo Mensagem.html para todos os integrantes da lista.
+Substituir em cada mensagem todos os campos entre {{ }}, a saber:
+{{nome}}: nome do cliente
+{{percdesc}}: desconto de acordo com a idade da pessoa. Exemplo: 18 anos, 18% de desconto.
+{{mesquevem}}: mês subsequente ao mês de aniversário da pessoa, por extenso.
+Deverão estar disponíveis também, duas imagens: logotipo da empresa (logo.png) e assinatura do e-mail (assinatura.png)
+Solução parcial: GitHub: hdblouro/TPI-Dados02

@@ -1,0 +1,3 @@
+Instruções
+Entregue aqui os arquivos fontes .ts compactados dos exercícios propostos no PDF anexo.
+Solução: https://github.com/hdblouro/ExDir04.git
