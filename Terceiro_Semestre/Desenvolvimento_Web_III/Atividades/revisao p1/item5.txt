@@ -1,0 +1,6 @@
+Comparação:        Prisma           x          Mongoose
+Sigla:             ORM                         ODM    
+Tipo de banco:     BD relacional(SQL)          BD não relacional(NoSQL)
+Exemplos:          PostgreSQL, MySQl           MongoDB
+Estrutura:         Mapeia tabelas em objetos   Mapeia coleções em objetos
+Definição:         Feito no schema.prisma      Feito através de schemas no código

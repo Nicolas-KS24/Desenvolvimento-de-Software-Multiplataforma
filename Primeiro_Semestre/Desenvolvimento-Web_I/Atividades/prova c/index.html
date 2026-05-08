@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <form action="/enviar" method="post">
+
+            <fieldset>
+                <legend><strong>Feedback</strong></legend>
+
+                <label for="name"><strong>Nome Completo:</strong></label>
+                <input type="text" name="name " id="name" placeholder="Escreva seu nome..."><br><br>
+
+                <label for="nota"><strong>Nota de 1 a 5:</strong></label>
+                <select name="nota" id="nota" required>
+                    <option value="" selected disabled>Selecione uma nota</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br><br>
+
+                <div class="Categoria">
+                    <label><strong>Escolha pelo menos uma categoria:</strong></label><br>
+
+                    <label for="sugestao">
+                        <input type="checkbox" name="opt[]" id="sugestao" value="Sugestão"> Sugestão
+                    </label>
+
+                    <label for="atendimento">
+                        <input type="checkbox" name="opt[]" id="atendimento" value="Atendimento"> Atendimento
+                    </label>
+
+                    <label for="produto">
+                        <input type="checkbox" name="opt[]" id="produto" value="Produto"> Produto
+                    </label>
+
+                    <label for="entrega">
+                        <input type="checkbox" name="opt[]" id="entrega" value="Entrega/Embalagem"> Entrega/Embalagem
+                    </label>
+
+                    <label for="reembolso">
+                        <input type="checkbox" name="opt[]" id="reembolso" value="Reembolso"> Reembolso
+                    </label>
+
+                    <label for="outro">
+                        <input type="checkbox" name="opt[]" id="outro" value="Outro"> Outro (Digite juntamente ao
+                        comentário abaixo)
+                    </label>
+                </div><br>
+
+                <label for="feedback"><strong>Feedback:</strong></label>
+                <textarea name="feedback" id="feedback" cols="47" rows="5" placeholder="Escreva seu comentário aqui..." required></textarea><br><br>
+
+                <button type="submit" id="enviar">Enviar!</button>
+            </fieldset>
+
+        </form>
+
+        <div id="mensagemFinal"></div>
+
+    </div>
+
+</body>
+
+<script src="script.js" defer></script>
+
+</html>

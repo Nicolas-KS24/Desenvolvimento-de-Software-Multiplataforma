@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+
+
+
+    <!-- People -->
+    <section id="person">
+        <div class="container">
+            <h1>Pessoas</h1>
+
+            <!-- Create -->
+            <form id="personForm">
+                <input type="text" id="name" placeholder="Nome" required />
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <!-- Load by ID -->
+            <h2>Buscar pessoa</h2>
+            <input type="number" id="searchId" placeholder="ID da Pessoa">
+            <button id="searchBtn">Buscar</button>
+
+            <div id="personDetails"></div>
+
+            <!-- Load person -->
+            <ul id="personList"></ul>
+            <select id="personId"></select>
+        </div>
+    </section>
+
+    <!-- Number-Phone -->
+    <section id="phone">
+        <div class="container">
+            <h1>Telefones</h1>
+
+            <!-- Create -->
+            <form id="numberForm">
+                <input type="text" id="phoneNumber" placeholder="Número de telefone" required />
+
+                <!-- Association -->
+                <select id="personId" required>
+                    <option value="">Selecione uma pessoa</option>
+                </select>
+
+                <button type="submit">Cadastrar Telefone</button>
+            </form>
+
+            <!-- Load -->
+            <h2>Lista de Telefones</h2>
+            <ul id="numberList"></ul>
+        </div>
+    </section>
+
+    <!-- Cars -->
+    <section id="car">
+        <div class="container">
+            <h1>Carros</h1>
+
+            <!-- Create -->
+            <form id="carForm">
+                <input type="text" id="model" placeholder="Modelo" required />
+                <button type="submit">Cadastrar</button>
+            </form>
+
+            <!-- Load -->
+            <ul id="carList"></ul>
+        </div>
+    </section>
+
+    <!-- Associations Person-Car -->
+    <section id="associations">
+        <div class="container">
+            <h1>Associações</h1>
+
+            <!-- Create -->
+             <form id="associationForm">
+                <input type="text" id="Association" placeholder="Associações" required/>
+                <button type="submit">Cadastrar</button>
+             </form>
+
+            <!-- Load -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pessoa</th>
+                        <th>Carro</th>
+                    </tr>
+                </thead>
+                <tbody id="associationList"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <script type="module" src="scripts.js" defer></script>
+</body>
+
+</html>
